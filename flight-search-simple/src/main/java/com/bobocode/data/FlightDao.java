@@ -1,9 +1,11 @@
 package com.bobocode.data;
 
+import com.bobocode.service.Flights;
+
 import java.util.HashSet;
 import java.util.Set;
 
-public class FlightDao {
+public class FlightDao implements Flights {
     private Set<String> flights = new HashSet<>();
 
     /**
@@ -13,7 +15,7 @@ public class FlightDao {
      * @return {@code true} if a flight number was stored, {@code false} otherwise
      */
     public boolean register(String flightNumber) {
-        throw new UnsupportedOperationException();// todo: implement this method
+        return flights.add(flightNumber);
     }
 
     /**
@@ -22,7 +24,7 @@ public class FlightDao {
      * @return a set of flight numbers
      */
     public Set<String> findAll() {
-        throw new UnsupportedOperationException();// todo: implement this method
+        return flights;
     }
 
 }

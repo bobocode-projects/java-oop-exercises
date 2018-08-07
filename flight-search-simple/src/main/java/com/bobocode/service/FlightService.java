@@ -2,10 +2,18 @@ package com.bobocode.service;
 
 import java.util.List;
 
+import static java.util.stream.Collectors.toList;
+
 /**
  * {@link FlightService} provides an API that allows to manage flight numbers
  */
 public class FlightService {
+
+    private Flights flights;
+
+    public FlightService(Flights flights) {
+        this.flights = flights;
+    }
 
     /**
      * Adds a new flight number
@@ -14,7 +22,7 @@ public class FlightService {
      * @return {@code true} if a flight number was added, {@code false} otherwise
      */
     public boolean registerFlight(String flightNumber) {
-        throw new UnsupportedOperationException();// todo: implement this method
+        return flights.register(flightNumber);
     }
 
     /**
@@ -24,6 +32,8 @@ public class FlightService {
      * @return a list of found flight numbers
      */
     public List<String> searchFlights(String query) {
-        throw new UnsupportedOperationException();// todo: implement this method
+        return flights.findAll().stream()
+                .filter(flightNum -> flightNum.toUpperCase().contains(query.toUpperCase()))
+                .collect(toList());
     }
 }
