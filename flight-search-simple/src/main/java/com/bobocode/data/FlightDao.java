@@ -12,7 +12,7 @@ public class FlightDao {
      * @param flightNumber a flight number to store
      * @return {@code true} if a flight number was stored, {@code false} otherwise
      */
-    public boolean resisterFlight(String flightNumber) {
+    public boolean resister(String flightNumber) {
 //        throw new UnsupportedOperationException();// todo: implement this method
         return flights.add(flightNumber);
     }
@@ -22,7 +22,7 @@ public class FlightDao {
      *
      * @return a set of flight numbers
      */
-    public Set<String> findAllFlights() {
+    public Set<String> findAll() {
 //        throw new UnsupportedOperationException();// todo: implement this method
         return flights;
     }
