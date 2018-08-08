@@ -10,5 +10,5 @@ It is important to have a different type of activities, which purpose is improvi
 
 ***An exercise** is a predefined task that you continuously implement to improve a certain skill* :muscle:
 ##
-* [Flights search]()
+* [Flights search](https://github.com/bobocode-projects/java-oop-exercises/tree/master/flight-search-simple)
 
