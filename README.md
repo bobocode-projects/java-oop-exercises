@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/bobocode-projects/resources/master/image/logo_transparent_background.png" height=50/>Java 8 exercises
+# <img src="https://raw.githubusercontent.com/bobocode-projects/resources/master/image/logo_transparent_background.png" height=50/>Java OOP exercises
 The list of exercises dedicated to training your OOP skills in Java
 
 ### No pain, No gain :heavy_exclamation_mark:
@@ -10,5 +10,5 @@ It is important to have a different type of activities, which purpose is improvi
 
 ***An exercise** is a predefined task that you continuously implement to improve a certain skill* :muscle:
 ##
-* [Flights search]()
+* [Flights search](https://github.com/bobocode-projects/java-oop-exercises/tree/master/flight-search-simple)
 
