@@ -1,5 +1,6 @@
 package com.bobocode;
 
+import com.bobocode.factory.FlightServiceFactory;
 import com.bobocode.service.FlightService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,7 +13,7 @@ import static org.junit.Assert.*;
 @RunWith(JUnit4.class)
 public class FlightServiceTest {
 
-    private FlightService flightService = new FlightService();
+    private FlightService flightService = new FlightServiceFactory().creteFlightService();
 
     @Test
     public void testRegisterFlight() {

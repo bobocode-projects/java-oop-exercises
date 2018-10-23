@@ -3,6 +3,13 @@ package com.bobocode.data;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * {@link FlightDao} represents a Data Access Object (DAO) for flights. The implementation is simplified, so it just
+ * uses {@link HashSet} to store flight numbers.
+ * <p>
+ * todo: 1. Implement a method {@link FlightDao#register(String)} that store new flight number into the set
+ * todo: 2. Implement a method {@link FlightDao#findAll()} that returns a set of all flight numbers
+ */
 public class FlightDao {
     private Set<String> flights = new HashSet<>();
 

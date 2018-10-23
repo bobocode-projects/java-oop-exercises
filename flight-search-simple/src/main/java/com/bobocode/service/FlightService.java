@@ -4,6 +4,9 @@ import java.util.List;
 
 /**
  * {@link FlightService} provides an API that allows to manage flight numbers
+ * <p>
+ * todo: 1. Using {@link com.bobocode.data.FlightDao} implement method {@link FlightService#registerFlight(String)}
+ * todo: 2. Using {@link com.bobocode.data.FlightDao} implement method {@link FlightService#searchFlights(String)}
  */
 public class FlightService {
 
@@ -14,7 +17,7 @@ public class FlightService {
      * @return {@code true} if a flight number was added, {@code false} otherwise
      */
     public boolean registerFlight(String flightNumber) {
-        throw new UnsupportedOperationException();// todo: implement this method
+        throw new UnsupportedOperationException("It's your job to implement this method");
     }
 
     /**
@@ -24,6 +27,6 @@ public class FlightService {
      * @return a list of found flight numbers
      */
     public List<String> searchFlights(String query) {
-        throw new UnsupportedOperationException();// todo: implement this method
+        throw new UnsupportedOperationException("It's your job to implement this method");
     }
 }
